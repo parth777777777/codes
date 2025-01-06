@@ -1,0 +1,19 @@
+{
+    "C_Cpp.default.compilerPath": "c:\\Users\\parth\\Desktop\\codes\\C++\\a.cpp",
+    "dotnet.defaultSolution": "ConsoleApplication1/ConsoleApplication1.sln",
+    "files.associations": {
+        "array": "cpp",
+        "*.tcc": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "memory": "cpp",
+        "fstream": "cpp",
+        "functional": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "vector": "cpp",
+        "sstream": "cpp",
+        "streambuf": "cpp",
+        "tuple": "cpp"
+    }
+}

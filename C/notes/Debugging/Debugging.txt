@@ -1,0 +1,31 @@
+# Always start with the first error 
+# Process :
+    1. understand the problem   
+    2. reproduce the problem if possible
+    3. Simplify the problem / Divide and conquer /isolate the source
+        a. remove parts of the original test case 
+        b. coomment out code 
+        c. unit testing- turn a large program into a bunch of small programs 
+    4. Identify the orgin of the problem
+    5. Use debugging tools if necessary 
+    6. solve the problem -- sometimes includes redesign or refactor of code 
+    7.  Test! Test! Test!
+
+# Techniques and tools : 
+    1. Tracing using print statements :   
+        a. Output values of variables at certain points of a program 
+        b. Show the flow of execution
+        c. Can help isolate the error
+    2. Debuggers : Monitor the execution of a program , stop it , restart it , set breakpoints and watch varaibles
+                   in memory
+    3. Log files : cna be used for analysis , add "good" log statements to your code
+    4. Monitoring software : run-time analysis of memory usage , network traffic, thread and object information
+    5. Exception handling (DOESNT APPLY FOR C) : helps a great deal identify catastrophic errors
+    6. Static analyzers : analyze source code for specific set of known problems
+        a. Semantic checker, does not analyze syntax 
+        b. can detect things like uninitailized variables , memory leaks , unreachable code , deadlocks or 
+           race conditions
+    7. Test suites - run a set of comprehensive system end to end tests
+    8. Debugging the program after it has crashed  :
+        a. Analyze the call stack memory 
+        b. Analyze memory dump (core file)  
