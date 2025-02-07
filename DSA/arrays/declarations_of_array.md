@@ -1,0 +1,10 @@
+-  int A[5];
+	- declares array but doesnt initialize it 
+- int A[5] = {2,57,7,15,1}; 
+ 	- declares and initialized the array completely 
+- int A[5] = {1,2};
+	- initialized first two indices with given elements and rest of them are initialized with 0 
+- int A[5] = {0};
+	- initializes the entire array with 0 (same as above but useful notation hence given seperately).
+- int A[] = {3,4,6,7,1};
+	- declares size based on elements given to it .
