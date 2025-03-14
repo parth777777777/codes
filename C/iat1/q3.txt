@@ -1,0 +1,9 @@
+ push operation on stack ,
+ adds an item on top of stack , if full then it is said to be stack overflow . 
+
+ algo :
+ 1. before pushing the element to the stack , we check if the stack is full
+ 2. if the stack is full (top == capacity-1) , then stack overflows and we cannot insert the element to the stack
+ 3. otherwise we incremenet the value of top by 1 (top ++) and the new value is inserted at top position 
+ 4. we can do this until we reach overflow condition
+

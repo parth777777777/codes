@@ -1,0 +1,13 @@
+what is a queue ? 
+queue is a linear data structure or an adt . Queue follows the FIFO principlpe to process data . 
+the data which is entered first will be accessed first . 
+Unlike stack , queue has two ends REAR and FRONT , the rear end is always used to insert the data i.e enqueue , and the front end is always used to remove data i.e dequeue .
+
+basic ops on queue:
+1. enqueue()- insert 
+2. dequeue() - remove
+3. peek() or front() - acquires data of the element at the front without deleting it .
+4. rear() - the operaiton returns the element a the rear end without deleting it . 
+5. isFull() - checks if full , return true if full .
+6. isEmpty() = return true if empty 
+7. size() - returns the size of the queue i.e the total number of elements stored in the queue.

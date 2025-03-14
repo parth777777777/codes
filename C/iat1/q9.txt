@@ -1,0 +1,10 @@
+What is a stack? 
+stack is a linear data structure which follows LIFO principle , meaning that the last element added to the stack will be the first one accessed . A stack can be thought of as a vertical pile of plates , where plates added go to the top and also are removed from the top . 
+
+Basic ops:
+1. push() - insert element into the stack
+2. pop() - remove element from the stack 
+3. top() - returns the top element of the stack 
+4. isEmpty() - returns true if the stack is empty 
+5. isFull() - returns true if the stack is full.
+

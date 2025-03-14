@@ -1,0 +1,12 @@
+algo for peek() and isFull() op of stack :
+#peek() -> returns the top element of the stack 
+algorithm:
+1. before returning the top element , we check if stack is empty .
+2. if stack is empty , return "Stack is empty".
+3. if not , return the element stored at index = top . 
+
+# isFull() - returns true if stack is full , else false
+algorithm: 
+1. we check if top == capacity -1 , if yes then stack is full , so return true 
+2. else return false
+
