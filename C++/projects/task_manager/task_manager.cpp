@@ -2,6 +2,8 @@
 #include<fstream>
 #include<nlohmann/json.hpp>
 #include <sys/types.h>
+#include <chrono>
+#include<format>
 
 int main(){
 	//open tasks file using istream
@@ -19,14 +21,20 @@ int main(){
 	if(!tasks.is_array()){
 		tasks = nlohmann::json::array();
 	}
-	
+
+	std::cout<<"title: ";
+	std::string description ;
+	std::cin>>description;
+
+	auto now = std::chrono::system_clock::now();
+	std::string formatted_time = std::format("{:%Y-%m-%d %H:%M:%0.1S}", now);
 	//code to add a task , currently its being added hardcoded, once i figure out how json file hanlding works with c++ ill move to getting user input
 	nlohmann::json newTask = {
 		{"id", tasks.empty() ? 1 : tasks.back()["id"].get<int>() + 1},
-		{"description", "testing"},
+		{"description", description},
 		{"status", "active"},
-		{"createdAt", "idk"},
-		{"updatedAt","null"}
+		{"createdAt", formatted_time},
+		{"updatedAt",formatted_time}
 	};
 
 	//adds the task in tasks file
