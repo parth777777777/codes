@@ -20,8 +20,26 @@ std::string formatTime(std::chrono::system_clock::time_point tp){
 	return oss.str();
 }
 
-void set_status(nlohmann::json *tasks){
-	
+void set_status(nlohmann::json *tasks, int index){
+	int input;
+	std::cout<<"set :\n1.Active\n2.To-do\n3.completed\n: ";
+	std::cin>>input;
+	switch(input) {
+		case 1:
+			(*tasks)[index-1]["status"] = "Active";
+		case 2:
+			(*tasks)[index-1]["status"] = "To-do";
+		case 3:
+			(*tasks)[index-1]["status"] = "Completed";
+	}
+	//pretty prints the data
+	std::cout<<(*tasks).dump(4)<<std::endl;
+
+	//outputs data back to main file (tasks.json)
+	std::ofstream outFile("./tasks.json");
+	outFile<<(*tasks).dump(4);
+	outFile.close();
+	std::cout<<"Status set!"<<std::endl;
 }
 
 void list_tasks(nlohmann::json *tasks){
@@ -129,8 +147,10 @@ int main(){
 	if(!tasks.is_array()){
 		tasks = nlohmann::json::array();
 	}
+
 	add_task(&tasks);
-	delete_task(&tasks);
+	add_task(&tasks);
+	set_status(&tasks, 1);
 	return 0;
 }
 
