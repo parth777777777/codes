@@ -1,6 +1,3 @@
-import pandas as pd 
-from matplotlib import pyplot as plt
-
 i = 0        #initial investment
 d= 25000     #monthly investment via SIP
 n= 0         #number of years
