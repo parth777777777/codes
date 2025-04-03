@@ -41,13 +41,13 @@ while True:
         case "3":
             #delete student record
             name = input("Enter student's name whose record is to be deleted : ")
-            choice = input(f"Are you sure you want to delete {name}'s record permanantly (Y/N) ?")
             while True:
-                if choice.lower == "y":
+                choice = input(f"Are you sure you want to delete {name}'s record permanantly (Y/N) ?")
+                if choice.lower() == "y":
                     del students[name]
                     print(f"Record for {name} deleted succesfully!")
                     break
-                elif choice.lower == "n":
+                elif choice.lower() == "n":
                     print("Record deletion cancelled!")
                     break
                 else:
@@ -73,6 +73,5 @@ while True:
             break
         case _:
             print("Invalid choice , Try again !")
-
     print("\n---------------------------------------------")
 

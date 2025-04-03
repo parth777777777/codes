@@ -22,7 +22,7 @@ print("\nIndexing and Slicing 3D Array:") # Indexing and slicing in 3D array
 print("Element at (1, 0, 1):", array_3d[1, 0, 1])
 print("Slice from 0th array, all rows, all columns:")
 print(array_3d[0, :, :])
-reshaped_3d = array_2d.reshape(1, 3, 2) # Reshape the 2D array to 3D
+reshaped_3d = array_2d.reshape(1, 3, 3) # Reshape the 2D array to 3D
 print("\nReshaped 3D Array:")
 print(reshaped_3d)   
 

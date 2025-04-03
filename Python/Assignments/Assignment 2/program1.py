@@ -7,16 +7,14 @@ while True:
     print("4.Sort Tasks")
     print("5.View Tasks")
     print("6.Exit")
-
     choice = input("Choose an option: ")
-
     #match-case introduces in python 3.10
     match choice:
         case "1":
             task = input("Enter task :")
             tasks.append(task)
         case "2":
-            task = input("Enter task to remove")
+            task = input("Enter task to remove :")
             if task in tasks:
                 tasks.remove(task)
             else: 
