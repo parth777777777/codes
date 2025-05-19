@@ -1,6 +1,6 @@
-i = 0        #initial investment
-d= 25000     #monthly investment via SIP
-n= 0         #number of years
+i = 1038000        #initial investment
+d= 26000     #monthly investment via SIP
+n= 2         #number of years
 r=11         #rate of interest
 M = i        #total amount
 

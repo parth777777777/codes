@@ -153,7 +153,6 @@ void deleteByValue(struct doublyLinkedList* list , int target){
 			}
 			}
 		}
-	}
 }
 
 int main(){
