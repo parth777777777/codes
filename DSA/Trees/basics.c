@@ -21,3 +21,4 @@ Binary Trees: every node can have a maximum of 2 children . So degree of any nod
 				since there are only 2 children , we can name them as left child and right child 
 				A binary tree where we only have left children is a left skewed binary tree. and similarly a binary tree where only right children
 				exist is called a right skewed binary tree. 
+*/
